@@ -6,11 +6,11 @@ export default function Products() {
   const threeWheelers = products.filter(p => p.category === "3-Wheeler");
 
   return (
-    <div className="min-h-screen pt-32 pb-24 px-6 md:px-12 bg-[#0B0B0B]">
+    <div className="min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 md:px-12 bg-[#0B0B0B]">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-glow">Electric Vehicles</h1>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+        <div className="mb-12 md:mb-16 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 text-glow">Electric Vehicles</h1>
+          <p className="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg">
             Choose from our premium selection of electric scooters and commercial 3-wheelers. 100% environment friendly.
           </p>
         </div>

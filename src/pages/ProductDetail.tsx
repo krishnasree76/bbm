@@ -35,7 +35,7 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="min-h-screen pt-32 pb-24 px-6 md:px-12 bg-[#0B0B0B]">
+    <div className="min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 md:px-12 bg-[#0B0B0B]">
       <div className="max-w-7xl mx-auto">
         <Link to="/products" className="inline-flex items-center text-gray-400 hover:text-white mb-8 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -44,7 +44,7 @@ export default function ProductDetail() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Image Gallery Side */}
-          <div className="relative rounded-2xl overflow-hidden glass aspect-square lg:aspect-auto min-h-[500px]">
+          <div className="relative rounded-2xl overflow-hidden glass aspect-square lg:aspect-auto min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
             <img 
               src={product.image} 
               alt={product.name} 
@@ -60,11 +60,11 @@ export default function ProductDetail() {
 
           {/* Details Side */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-glow">{product.name}</h1>
-            <p className="text-xl text-gray-300 mb-8">{product.shortSpecs}</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-glow">{product.name}</h1>
+            <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8">{product.shortSpecs}</p>
 
             {/* Key Specs Highlights */}
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-8 md:mb-10">
               {product.specs.mileage && (
                 <div className="glass p-4 rounded-xl flex items-center space-x-3">
                   <div className="p-2 bg-blue-500/20 rounded-lg"><Gauge className="text-blue-400 w-5 h-5" /></div>
@@ -138,15 +138,15 @@ export default function ProductDetail() {
 
       {/* Enquiry Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-md overflow-hidden shadow-2xl mt-16 md:mt-0">
-            <div className="p-6 border-b border-gray-800 flex justify-between items-center">
-              <h3 className="text-xl font-bold text-white">Enquire About {product.name}</h3>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto pt-20 pb-10">
+          <div className="bg-[#111] border border-gray-800 rounded-2xl w-full max-w-md shadow-2xl my-auto flex-shrink-0">
+            <div className="p-4 sm:p-6 border-b border-gray-800 flex justify-between items-center sticky top-0 bg-[#111] z-10 rounded-t-2xl">
+              <h3 className="text-lg sm:text-xl font-bold text-white">Enquire About {product.name}</h3>
               <button type="button" onClick={() => setIsModalOpen(false)} className="text-gray-400 hover:text-white transition-colors">
                 <X className="w-6 h-6" />
               </button>
             </div>
-            <form onSubmit={handleWhatsAppSubmit} className="p-6 space-y-4">
+            <form onSubmit={handleWhatsAppSubmit} className="p-4 sm:p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-1">Name</label>
                 <input 
