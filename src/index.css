@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bbm-black-100: #1A1A1A;
+  --color-bbm-black-200: #111111;
+  --color-bbm-black-300: #0B0B0B;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.5), 0 0 20px rgba(0, 170, 255, 0.3);
+  }
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #ffffff;
+}
