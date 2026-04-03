@@ -20,12 +20,12 @@ export default function Footer() {
               "THE SOUND OF FUTURE IS SILENCE" - Leading manufacturer of eco-friendly electric vehicles in India.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:border-blue-500 transition-colors">
+              {/* <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:border-blue-500 transition-colors">
                 <Camera size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:border-blue-500 transition-colors">
                 <Globe size={18} />
-              </a>
+              </a> */}
             </div>
           </div>
 
