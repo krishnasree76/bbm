@@ -6,7 +6,7 @@ import Footer from "@/components/Footer"
 import Home from "@/pages/Home"
 import Products from "@/pages/Products"
 import ProductDetail from "@/pages/ProductDetail"
-import Partnership from "@/pages/Partnership"
+import Partnership from "@/pages/Partnership.jsx"
 import ScrollToTop from "@/components/ScrollToTop"
 
 // --- WHATSAPP ICON COMPONENT ---
