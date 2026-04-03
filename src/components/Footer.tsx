@@ -9,12 +9,12 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src={logoImage} 
-                alt="BBM Logo" 
-                className="w-12 h-12 rounded-full object-cover drop-shadow-[0_0_15px_rgba(0,170,255,0.4)]" 
+              <img
+                src={logoImage}
+                alt="BBM Logo"
+                className="w-12 h-12 rounded-full object-cover drop-shadow-[0_0_15px_rgba(0,170,255,0.4)]"
               />
-              <span className="font-bold text-lg leading-tight">BHARATHI BUSINESS<br/>MACHINES INT.</span>
+              <span className="font-bold text-lg leading-tight">BHARATHI BUSINESS<br />MACHINES INT.</span>
             </div>
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
               "THE SOUND OF FUTURE IS SILENCE" - Leading manufacturer of eco-friendly electric vehicles in India.
@@ -54,17 +54,24 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6">Get In Touch</h4>
             <ul className="space-y-4">
-              <li className="flex items-start space-x-3 group">
+              <li className="flex items-start space-x-3 group mb-3">
                 <MapPin className="text-blue-500 mt-1 shrink-0" size={18} />
                 <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
-                  3-37, Ibrahimpalli (V), Chevella (M), Telangana – 501503
+                  <span className="font-semibold text-white">Factory:</span> BBM INTERNATIONAL PVT LTD, Ibrahimpalli, Chevella -501503
+                </span>
+              </li>
+              <li className="flex items-start space-x-3 group mb-2">
+                <MapPin className="text-blue-500 mt-1 shrink-0" size={18} />
+                <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
+                  <span className="font-semibold text-white">BBM EV EXPERIENCE:</span> A V V Raju estates, Brindavan estates, Nizampet road, Hyderabad
                 </span>
               </li>
               <li className="flex items-center space-x-3 group">
                 <Phone className="text-blue-500 shrink-0" size={18} />
                 <div className="flex flex-col">
-                  <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">1800-203-1233</span>
-                  <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">+91 8317661362</span>
+                  <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">+91 70133 66819</span>
+                  {/* <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">1800-203-1233</span>
+                  <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">+91 8317661362</span> */}
                 </div>
               </li>
               <li className="flex items-center space-x-3 group">
@@ -81,10 +88,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} Bharathi Business Machines International. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 space-x-4">
+          {/* <div className="mt-4 md:mt-0 space-x-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

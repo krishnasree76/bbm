@@ -5,12 +5,8 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Smooth scroll to top on route change
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant" // Using instant so it doesn't animate weirdly across pages
-    });
+    // Reset scroll to top instantly on route change
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;

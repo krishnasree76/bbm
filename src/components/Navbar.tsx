@@ -26,10 +26,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 group">
-          <img 
-            src={logoImage} 
-            alt="BBM Logo" 
-            className="w-12 h-12 rounded-full object-cover transition-transform group-hover:scale-110 drop-shadow-[0_0_15px_rgba(0,170,255,0.4)]" 
+          <img
+            src={logoImage}
+            alt="BBM Logo"
+            className="h-16 w-auto object-contain transition-transform group-hover:scale-110 drop-shadow-[0_0_15px_rgba(0,170,255,0.4)]"
           />
           <span className="font-bold text-xl tracking-wide hidden sm:block">BHARATHI BUSINESS MACHINES</span>
         </Link>
@@ -40,10 +40,11 @@ export default function Navbar() {
           <Link to="/products" className={`text-sm font-medium hover:text-blue-400 transition-colors ${location.pathname.startsWith('/products') ? 'text-blue-500' : 'text-gray-300'}`}>Products</Link>
           <a href="#about" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">About</a>
           <a href="#contact" className="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors">Contact</a>
+          <Link to="/partnership" className={`text-sm font-medium hover:text-blue-400 transition-colors ${location.pathname === '/partnership' ? 'text-blue-500' : 'text-gray-300'}`}>Partnership</Link>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-gray-300 hover:text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
