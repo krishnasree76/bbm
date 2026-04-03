@@ -55,10 +55,53 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-[#111] border-b border-gray-800 shadow-xl py-4 flex flex-col px-6 space-y-4">
-          <Link to="/" className="text-white hover:text-blue-400 text-lg py-2 border-b border-gray-800">Home</Link>
-          <Link to="/products" className="text-white hover:text-blue-400 text-lg py-2 border-b border-gray-800">Products</Link>
-          <a href="#about" className="text-white hover:text-blue-400 text-lg py-2 border-b border-gray-800">About</a>
-          <a href="#contact" className="text-white hover:text-blue-400 text-lg py-2">Contact</a>
+
+          <Link
+            to="/"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`text-lg py-2 border-b border-gray-800 transition-colors ${location.pathname === "/" ? "text-blue-500" : "text-white hover:text-blue-400"
+              }`}
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/products"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`text-lg py-2 border-b border-gray-800 transition-colors ${location.pathname.startsWith("/products")
+              ? "text-blue-500"
+              : "text-white hover:text-blue-400"
+              }`}
+          >
+            Products
+          </Link>
+
+          <a
+            href="#about"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-lg text-white hover:text-blue-400 py-2 border-b border-gray-800"
+          >
+            About
+          </a>
+
+          <Link
+            to="/partnership"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`text-lg py-2 border-b border-gray-800 transition-colors ${location.pathname === "/partnership"
+              ? "text-blue-500"
+              : "text-white hover:text-blue-400"
+              }`}
+          >
+            Partnership
+          </Link>
+
+          <a
+            href="#contact"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-lg text-white hover:text-blue-400 py-2"
+          >
+            Contact
+          </a>
         </div>
       )}
     </nav>
