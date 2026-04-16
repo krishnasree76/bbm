@@ -13,10 +13,10 @@ export default function ProductDetail() {
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!product) return;
-    
+
     const message = `Hello, I want to know more about the ${product.name}.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nLocation: ${formData.location}`;
-    const whatsappUrl = `https://wa.me/917013366819?text=${encodeURIComponent(message)}`;
-    
+    const whatsappUrl = `https://wa.me/918317661362?text=${encodeURIComponent(message)}`;
+
     window.open(whatsappUrl, "_blank");
     setIsModalOpen(false);
   }
@@ -41,13 +41,13 @@ export default function ProductDetail() {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to all vehicles
         </Link>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Image Gallery Side */}
           <div className="relative rounded-2xl overflow-hidden glass aspect-square lg:aspect-auto min-h-[300px] sm:min-h-[400px] lg:min-h-[500px]">
-            <img 
-              src={product.image} 
-              alt={product.name} 
+            <img
+              src={product.image}
+              alt={product.name}
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -149,33 +149,33 @@ export default function ProductDetail() {
             <form onSubmit={handleWhatsAppSubmit} className="p-4 sm:p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-1">Name</label>
-                <input 
-                  required 
-                  type="text" 
+                <input
+                  required
+                  type="text"
                   value={formData.name}
-                  onChange={e => setFormData({...formData, name: e.target.value})}
+                  onChange={e => setFormData({ ...formData, name: e.target.value })}
                   className="w-full bg-[#050505] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                   placeholder="Your Name"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-1">Phone Number</label>
-                <input 
-                  required 
-                  type="tel" 
+                <input
+                  required
+                  type="tel"
                   value={formData.phone}
-                  onChange={e => setFormData({...formData, phone: e.target.value})}
+                  onChange={e => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full bg-[#050505] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                   placeholder="Your Phone Number"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-1">Location</label>
-                <input 
-                  required 
-                  type="text" 
+                <input
+                  required
+                  type="text"
                   value={formData.location}
-                  onChange={e => setFormData({...formData, location: e.target.value})}
+                  onChange={e => setFormData({ ...formData, location: e.target.value })}
                   className="w-full bg-[#050505] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
                   placeholder="Your City / Address"
                 />

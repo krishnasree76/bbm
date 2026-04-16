@@ -12,7 +12,7 @@ import ScrollToTop from "@/components/ScrollToTop"
 // --- WHATSAPP ICON COMPONENT ---
 export function WhatsAppFloatingIcon() {
   const message = encodeURIComponent("I want to know details about...");
-  const whatsappUrl = `https://wa.me/917013366819?text=${message}`;
+  const whatsappUrl = `https://wa.me/918317661362?text=${message}`;
 
   return (
     <a

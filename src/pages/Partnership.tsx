@@ -32,7 +32,7 @@ const Partnership = () => {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const phoneNumber = "917013366819";
+        const phoneNumber = "918317661362";
 
         let message = isDealership
             ? `*New Dealership Inquiry*%0A`

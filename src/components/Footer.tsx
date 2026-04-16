@@ -102,18 +102,20 @@ const Footer = () => {
               <li className="flex items-center space-x-3 group">
                 <Phone className="text-blue-500 shrink-0" size={18} />
                 <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
-                  +91 70133 66819
+                  +91 8317661362
+                  +91 9177295014
                 </span>
               </li>
 
               <li className="flex items-center space-x-3 group">
                 <Mail className="text-blue-500 shrink-0" size={18} />
                 <div className="flex flex-col">
-                  <a href="mailto:info.bbmi9@gmail.com" className="text-gray-400 text-sm hover:text-blue-400 transition-colors">
-                    info.bbmi9@gmail.com
+                  <a href="mailto:alnar@bbmi.in" className="text-gray-400 text-sm hover:text-blue-400 transition-colors">
+                    alnar@bbmi.in
                   </a>
                   <a href="mailto:info@bbmi.in" className="text-gray-400 text-sm hover:text-blue-400 transition-colors">
                     info@bbmi.in
+
                   </a>
                 </div>
               </li>
